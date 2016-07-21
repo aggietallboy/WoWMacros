@@ -19,5 +19,6 @@ PreMacro = [[
 PostMacro = [[
   /TargetEnemy [noharm][dead]
   /Use [combat] 13
-  /Use [combat] 14]],
+  /Use [combat] 14
+  ]],
 }
