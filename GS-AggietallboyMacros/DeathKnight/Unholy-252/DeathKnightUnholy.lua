@@ -2,17 +2,24 @@ local Sequences = GSMasterSequences
 ------------------
 ----- Death Knight
 ------------------
-Sequences['PUT_NAME_HERE'] = {
+Sequences['ATB_DK_UNHOLY'] = {
 specID = 252,
-author = "WHO_WROTE_IT",
-helpTxt = "INFO ABOUT MACRO/Title - Talent: 3212233",
+author = "throwryuken",
+helpTxt = "Unholy DK - Talent: 2221213",
 StepFunction = GSStaticPriority,
 PreMacro = [[
-PUT PREMACRO HERE
+  /targetenemy [noharm][dead]
 ]],
-"/cast SomeSpells",
-"/cast [nochanneling] Some More spells, but don't knock out one that's running",
-PostMacro = [[
-  cleanup with some more spells that you care about
+  '/cast [nochanneling] Raise Dead',
+	'/cast [nochanneling] Outbreak',
+	'/cast [nochanneling] Dark Transformation',
+	'/cast [nochanneling] Festering Strike',
+	'/cast [nochanneling] Scourge Strike',
+	'/cast [nochanneling] Soul Reaper',
+	'/cast [nochanneling] Death Strike',
+	'/cast [nochanneling] Summon Gargoyle',
+	'/cast [nochanneling] Death Coil',
+	PostMacro = [[
+  /startattack
 ]],
 }
