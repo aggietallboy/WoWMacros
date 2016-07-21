@@ -1,0 +1,10 @@
+## Interface: 70000
+## Title: |cffff0000GS-E:|r Aggietallboy's Demon Hunter Macro Set
+## Notes: These macros are maintained at https://github.com/aggietallboy/WoWMacros 
+## Author: Aggietallboy
+## Version: v1
+## RequiredDeps: GS-Core
+## LoadOnDemand: 1
+
+\Havoc-577\DemonHunterHavoc.lua
+\Frost-251\DemonHunterVengance.lua
