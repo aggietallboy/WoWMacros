@@ -3,6 +3,8 @@ This is a collection of Macros that I use for Gnome Sequencer Enhanced
 
 
 http://www.wowinterface.com/downloads/fileinfo.php?id=23921
+
+
 http://mods.curse.com/addons/wow/gnomesequencer-enhanced
 
 Shoutouts to Timothy Luke for his great update to semlar's great addon!
