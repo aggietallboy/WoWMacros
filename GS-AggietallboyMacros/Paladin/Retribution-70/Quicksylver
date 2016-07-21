@@ -1,0 +1,44 @@
+Sequences['QS_Ret'] = {
+specID = 70,
+author = "Quicksylver",
+helpTxt = "Retribution Single Target macro - 3312112",
+icon = "INV_Sword_2H_AshbringerCorrupt",
+PreMacro = [[
+/targetenemy [noharm][dead]
+]],
+'/cast Judgment',
+'/cast [combat]!Consecration',
+'/cast Crusader Strike',
+'/cast Crusader Strike',
+'/cast Blade of Wrath',
+'/cast Blade of Wrath',
+'/cast [combat]!Crusade',
+"/cast Justicar's Vengeance",
+"/cast Templar's Verdict",
+-- '/cast !Wake of Ashes',
+PostMacro = [[
+/use [combat]13
+/use [combat]14
+]],
+}
+
+Sequences['QS_RetAoE'] = {
+specID = 70,
+author = "Quicksylver",
+helpTxt = "Retribution AoE macro - 3312112",
+icon = "Ability_Paladin_DivineStorm",
+PreMacro = [[
+/targetenemy [noharm][dead]
+]],
+'/cast Judgment',
+'/cast [combat]!Consecration',
+'/cast Crusader Strike',
+'/cast Blade of Wrath',
+'/cast [combat]!Crusade',
+'/cast Divine Storm',
+--'/cast !Wake of Ashes',
+PostMacro = [[
+/use [combat]13
+/use [combat]14
+]],
+}
