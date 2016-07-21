@@ -6,7 +6,7 @@ local Sequences = GSMasterSequences
 Sequences['ATB_HUNT_BMSing'] = {
 specID = 253,
 author = "Aggietallboy",
-helpTxt = "Single Target - Talent: 2322111",
+helpTxt = "BM Single Target - Talent: 2322111",
 StepFunction = GSStaticPriority,
 PreMacro = [[
 /console Sound_EnableSFX 0
@@ -39,7 +39,7 @@ PostMacro = [[
 Sequences['ATB_HUNT_BMAoE'] = {
 specID = 253,
 author = "Aggietallboy",
-helpTxt = "With Barrage - Talent: 3222321",
+helpTxt = "BM AOE - Talent: 3222321",
 StepFunction = GSStaticPriority,
 PreMacro = [[
 /console Sound_EnableSFX 0
