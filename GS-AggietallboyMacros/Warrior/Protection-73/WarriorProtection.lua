@@ -4,7 +4,7 @@ local Sequences = GSMasterSequences
 ----- Warrior
 ------------------
 Sequences['PUT_NAME_HERE'] = {
-specID = 62,
+specID = 73,
 author = "WHO_WROTE_IT",
 helpTxt = "INFO ABOUT MACRO/Title - Talent: 3212233",
 StepFunction = GSStaticPriority,
