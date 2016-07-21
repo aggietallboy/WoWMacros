@@ -2,17 +2,23 @@ local Sequences = GSMasterSequences
 ------------------
 ----- Death Knight
 ------------------
-Sequences['PUT_NAME_HERE'] = {
+Sequences['ATB_DK_FROST'] = {
 specID = 251,
-author = "WHO_WROTE_IT",
-helpTxt = "INFO ABOUT MACRO/Title - Talent: 3212233",
+author = "John Mets",
+helpTxt = "DK Frost - Talent: 3133121",
 StepFunction = GSStaticPriority,
 PreMacro = [[
-PUT PREMACRO HERE
+  /cast [combat] Pillar of Frost
 ]],
-"/cast SomeSpells",
-"/cast [nochanneling] Some More spells, but don't knock out one that's running",
+    "/castsequence reset=combat Obliterate, Frost Strike",
+    '/castsequence reset=combat Obliterate, Frost Strike, Frost Strike, Obliterate, howling blast',
+    "/castsequence reset=combat Obliteration",
+    "/cast [combat] remorseless winter",
+    "/cast [combat] empower rune weapon",
 PostMacro = [[
-  cleanup with some more spells that you care about
+  /targetenemy [noharm][dead]
+  /cast [combat] Anti-Magic Shell
+  /use [combat] 13
+  /use [combat] 14
 ]],
 }
