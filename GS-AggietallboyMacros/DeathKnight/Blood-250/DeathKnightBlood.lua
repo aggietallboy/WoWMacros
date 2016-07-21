@@ -2,17 +2,22 @@ local Sequences = GSMasterSequences
 ------------------
 ----- Death Knight
 ------------------
-Sequences['PUT_NAME_HERE'] = {
+Sequences['ATB_DK_BLOOD'] = {
 specID = 250,
-author = "WHO_WROTE_IT",
-helpTxt = "INFO ABOUT MACRO/Title - Talent: 3212233",
+author = "John Mets",
+helpTxt = "DK Blood - Talent: 2212213",
 StepFunction = GSStaticPriority,
 PreMacro = [[
-PUT PREMACRO HERE
+  /cast [combat] Vampiric Blood
+  /cast [combat] Dancing Rune Weapon
 ]],
-"/cast SomeSpells",
-"/cast [nochanneling] Some More spells, but don't knock out one that's running",
+  '/cast Marrowrend',
+  "/castsequence reset=combat Death's Caress, Blood Boil, Death Strike, blood Boil, Marrowrend",
+  "/castsequence reset=combat Death's Caress, Blood Boil, Blood Boil, death strike, soulgorge",
+  "/cast Heart Strike",
+  "/cast Death Strike",
 PostMacro = [[
-  cleanup with some more spells that you care about
-]],
+  /TargetEnemy [noharm][dead]
+  /Use [combat] 13
+  /Use [combat] 14]],
 }
