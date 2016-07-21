@@ -1,0 +1,28 @@
+Talent suggestion :
+
+2112133
+
+
+Single
+
+  '/cast Blood Boil',
+  '/cast Death and Decay',
+  '/cast Marrowrend', -- for 5 stacks
+  '/cast Death Strike'
+  '/cast Heart Strike'
+  
+AOE
+  '/cast Blood Boil',
+  '/cast Death and Decay',
+  '/cast Marrowrend', -- 4 or more, only 1 stack, heart strike more
+  '/cast Death Strike'
+  '/cast Heart Strike'
+  
+Taunt 
+  '/cast Dark Command'
+  '/cast Death Grip'
+  
+Survival 
+  '/cast Anti-Magic Shell'
+  '/cast Dancing Rune Weapon'
+  
