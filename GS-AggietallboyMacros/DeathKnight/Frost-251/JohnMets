@@ -1,0 +1,27 @@
+Sequences["DFPTR"] = {
+StepFunction = [[
+		limit = limit or 1
+		if step == limit then
+			limit = limit % #macros + 1
+			step = 1
+		else
+			step = step % #macros + 1
+		end
+	]],
+    PreMacro = [[
+/cast [combat] Pillar of Frost
+    ]],
+    "/castsequence reset=combat Obliterate, Frost Strike",
+    '/castsequence reset=combat Obliterate, Frost Strike, Frost Strike, Obliterate, howling blast',
+    "/castsequence reset=combat Obliteration",
+    "/cast [combat] remorseless winter",
+    "/cast [combat] empower rune weapon",
+    PostMacro = [[
+/targetenemy [noharm][dead]
+/cast [combat] Anti-Magic Shell
+/use [combat] 12
+/use [combat] 13
+/use [combat] 14
+/script UIErrorsFrame:Hide();
+    ]],
+}
