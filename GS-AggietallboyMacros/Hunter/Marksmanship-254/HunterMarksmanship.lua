@@ -11,9 +11,6 @@ StepFunction = GSStaticPriority,
 PreMacro = [[
 /targetenemy [noharm][dead]
 /startattack
-/petattack [@target,harm]
-/petautocastoff [group] Growl
-/petautocaston [nogroup] Growl
 /cast [target=focus, exists, nodead],[target=pet, exists, nodead] Misdirection
 ]],
   "/cast [nochanneling] Windburst;",
