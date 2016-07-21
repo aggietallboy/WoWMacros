@@ -1,0 +1,62 @@
+Sequences['BM1'] = {
+specID = 253,
+author = "John",
+helpTxt = "With Barrage - Talent: 3222321",
+StepFunction = GSStaticPriority,
+PreMacro = [[
+/targetenemy [noharm][dead]
+/startattack
+/petattack [@target,harm]
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+/cast [target=focus, exists, nodead],[target=pet, exists, nodead] Misdirection
+]],
+"/cast [nochanneling] Bestial Wrath",
+"/cast [nochanneling] !Kill Command",
+"/cast [nochanneling] Intimidation",
+"/cast [nochanneling] Dire Frenzy",
+"/cast Barrage",
+"/cast [nochanneling] Titan's Thunder",
+"/cast [nochanneling] !Kill Command",
+"/cast [nochanneling] Bestial Wrath",
+PostMacro = [[
+/cast Aspect of the Wild
+/use [combat]11
+/use [combat]13
+/use [combat]14
+]],
+}
+
+
+Sequences['BM2'] = {
+specID = 253,
+author = "John",
+helpTxt = "Without Barrage - Talent: 3222321",
+StepFunction = GSStaticPriority,
+PreMacro = [[
+/targetenemy [noharm][dead]
+/startattack
+/petattack [@target,harm]
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+/cast [target=focus, exists, nodead],[target=pet, exists, nodead] Misdirection
+]],
+"/cast [nochanneling] Bestial Wrath",
+"/cast [nochanneling] !Kill Command",
+"/cast [nochanneling] Dire Frenzy",
+"/cast [nochanneling] Intimidation",
+"/cast [nochanneling] Cobra Shot",
+"/cast [nochanneling] Concussive Shot",
+"/cast [nochanneling] Titan's Thunder",
+"/cast [nochanneling] !Kill Command",
+"/cast [nochanneling] Bestial Wrath",
+PostMacro = [[
+/cast Aspect of the Wild
+/use [combat]11
+/use [combat]13
+/use [combat]14
+]],
+}
+
+
+
